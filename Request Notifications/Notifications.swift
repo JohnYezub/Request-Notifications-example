@@ -33,8 +33,19 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
             content.sound = UNNotificationSound.default
             content.badge = 1
             content.categoryIdentifier = userAction
+            guard let path = Bundle.main.path(forResource: "sea", ofType: "png") else {
+                return
+            }
+            let url = URL(fileURLWithPath: path)
+            do {
+                let attachment = try UNNotificationAttachment(identifier: "pic", url: url, options: nil)
+                content.attachments = [attachment]
+            } catch  {
+                print("can't load picture")
+            }
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             let id = "Local"
+            
             let request = UNNotificationRequest(identifier: id, content: content, trigger: trigger)
             notificationcenter.add(request) { (error) in
                 if let error = error {

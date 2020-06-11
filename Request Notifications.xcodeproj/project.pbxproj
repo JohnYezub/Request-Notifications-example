@@ -14,6 +14,7 @@
 		84B8699424920EB200EC196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B8699324920EB200EC196F /* Assets.xcassets */; };
 		84B8699724920EB200EC196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8699524920EB200EC196F /* LaunchScreen.storyboard */; };
 		84B8699F2492220100EC196F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8699E2492220100EC196F /* Notifications.swift */; };
+		84B869A12492274D00EC196F /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B869A02492274D00EC196F /* sea.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84B8699624920EB200EC196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B8699824920EB200EC196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B8699E2492220100EC196F /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		84B869A02492274D00EC196F /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sea.png; path = ../../../../Downloads/sea.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				84B8698C24920EAF00EC196F /* SceneDelegate.swift */,
 				84B8698E24920EAF00EC196F /* ViewController.swift */,
 				84B8699024920EAF00EC196F /* Main.storyboard */,
+				84B869A02492274D00EC196F /* sea.png */,
 				84B8699324920EB200EC196F /* Assets.xcassets */,
 				84B8699524920EB200EC196F /* LaunchScreen.storyboard */,
 				84B8699824920EB200EC196F /* Info.plist */,
@@ -131,6 +134,7 @@
 				84B8699724920EB200EC196F /* LaunchScreen.storyboard in Resources */,
 				84B8699424920EB200EC196F /* Assets.xcassets in Resources */,
 				84B8699224920EAF00EC196F /* Main.storyboard in Resources */,
+				84B869A12492274D00EC196F /* sea.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
