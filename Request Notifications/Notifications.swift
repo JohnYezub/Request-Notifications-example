@@ -28,12 +28,12 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
         func scheduleNotification(notificationType: String) {
             let content = UNMutableNotificationContent()
             let userAction = "User Action"
-            content.title = notificationType
-            content.body = "content body"
+            content.title = "Title"//notificationType
+            content.body = "Notification text"
             content.sound = UNNotificationSound.default
             content.badge = 1
             content.categoryIdentifier = userAction
-            guard let path = Bundle.main.path(forResource: "sea", ofType: "png") else {
+            guard let path = Bundle.main.path(forResource: "sea", ofType: "jpg") else {
                 return
             }
             let url = URL(fileURLWithPath: path)

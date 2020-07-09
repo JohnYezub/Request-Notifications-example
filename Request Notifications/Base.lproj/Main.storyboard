@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,25 +16,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5p-26-ZE6">
-                                <rect key="frame" x="150.5" y="44" width="113" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.80784313730000001" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="set notification 1"/>
+                                <rect key="frame" x="107" y="431.66666666666669" width="200" height="33"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="dCC-Ty-WtO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Set notification ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXA-g7-d2j"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scheduled notification will appear in 5 sec after &quot;Set notification&quot; pressed" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2C-jF-qQU">
+                                <rect key="frame" x="57" y="343.66666666666669" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="PQT-SO-EPp"/>
+                                    <constraint firstAttribute="height" constant="50" id="qqb-5R-j1a"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbj-F2-etf">
+                                <rect key="frame" x="202.33333333333334" y="401.66666666666669" width="9.3333333333333428" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="v5l-5O-iQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="N5p-26-ZE6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5mK-aA-W4c"/>
-                            <constraint firstItem="N5p-26-ZE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xnJ-Q6-ty7"/>
+                            <constraint firstItem="N5p-26-ZE6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="480-kP-XZk"/>
+                            <constraint firstItem="Rbj-F2-etf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5qB-3r-94i"/>
+                            <constraint firstItem="v2C-jF-qQU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZxW-de-aYB"/>
+                            <constraint firstItem="N5p-26-ZE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f0S-uf-Efx"/>
+                            <constraint firstItem="Rbj-F2-etf" firstAttribute="top" secondItem="v2C-jF-qQU" secondAttribute="bottom" constant="8" id="jUB-DZ-Vah"/>
+                            <constraint firstItem="N5p-26-ZE6" firstAttribute="top" secondItem="Rbj-F2-etf" secondAttribute="bottom" constant="12" id="rCc-R8-YRd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="Rbj-F2-etf" id="9m7-g2-qDa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>
